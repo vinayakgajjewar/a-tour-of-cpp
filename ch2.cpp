@@ -11,6 +11,23 @@ void print_square(double x) {
 }
 
 int main() {
+
+    int inches = 13;
+    bool succeeded = false;
+    char initial = 'U';
+    double pi = 3.1415;
+
+    auto something = 6.73;
+    auto something_else = true;
+
+    double sum = inches + pi;
+    int another_sum = inches + pi;
+
+    int i = 7.6; // Truncated to 7
+    std::cout << "i = " << i << "\n";
+    i += 2;
+    std::cout << "i = " << i << "\n";
+
     std::cout << "Hello world\n";
     print_square(4);
     print_square(3.14159265);
