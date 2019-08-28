@@ -6,6 +6,10 @@ double square(double x) {
     return x * x;
 }
 
+constexpr double summation(double x, double y) {
+    return x + y;
+}
+
 void print_square(double x) {
     std::cout << "The square of " << x << " is " << square(x) << "\n";
 }
@@ -31,4 +35,7 @@ int main() {
     std::cout << "Hello world\n";
     print_square(4);
     print_square(3.14159265);
+
+    const int blah = 17; // A named constant
+    constexpr double blah2 = summation(1.3, 2.4); // summation() is a constexpr so this is okay
 }
