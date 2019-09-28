@@ -15,8 +15,8 @@ int main()
     std::cout << a + b << "\n";
 
     // 3 ways to initialize a variable:
-    int x = 1;
-    int y (1);
-    int z {1};
+    int x = 1; // C-like initialization
+    int y (1); // Constructor initialization new in C++
+    int z {1}; // Uniform initialization introduced in C++11
     std::cout << x + y + z << "\n";
 }
